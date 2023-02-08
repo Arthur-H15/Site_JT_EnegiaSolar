@@ -1,0 +1,59 @@
+
+header{
+    background-color: rgb(38, 120, 167);
+}
+    .logo img {
+      width: 200px;
+      height: 68px;
+      margin: auto ;
+      padding: auto;
+      
+    //   display: flex;
+      
+      
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: auto ;
+      padding: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 10px;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: large;
+      
+      
+      
+    }
+    nav a:hover{
+        background-color: rgb(230, 19, 19);
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        // justify-content: space-evenly;
+        // height: 55px;
+        width: 80%;
+        
+    }
+    .redesociais div{
+        display: inline;
+        margin: auto;
+        padding: 10px;
+    }
+    @media (max-width: 767px) {
+      
+
+      nav ul  {
+        flex-direction: column;
+      }
+      nav{
+        flex-direction: column;
+      }
+    }
