@@ -1,0 +1,71 @@
+<div id="formulario"> 
+
+
+<app-formulario-email></app-formulario-email>
+<div class="titulocards">beneficios</div>
+<div id="beneficios">
+    <div class="card">
+        <img  src="../../../assets/icons/Casas.png" class="icons-cards">
+   <strong>
+    Instalação
+   </strong>     
+Instalação e comissionamento e manutenção de gerador fotovoltaico.
+    </div>
+    <div class="card">
+        <img  src="../../../assets/icons/renovavel.png" class="icons-cards">
+
+        <strong>
+            Manutenção
+           </strong>     
+        Instalação e comissionamento e manutenção de gerador fotovoltaico.
+
+    </div>
+    <div class="card">
+        <img  src="../../../assets/icons/monitoramento.png" class="icons-cards">
+
+        <strong>
+            Monitore por App
+           </strong>     
+        Instalação e comissionamento e manutenção de gerador fotovoltaico.
+    </div>
+    <div class="card">
+        <img  src="../../../assets/icons/garantia.png" class="icons-cards">
+
+        <strong>
+            Garantia
+           </strong>     
+        Instalação e comissionamento e manutenção de gerador fotovoltaico.
+    </div>
+
+</div>
+<div class="PorQueInvestirContainer">
+    <img src="../../../assets/img/fotohorizontalteste.jpg" alt="">
+    <div id="informacao">
+        <div id="titulo">
+            Por que investir
+           em <br><strong>Energia Solar</strong>?
+        </div>
+        <div id="texto">
+            Além de ser uma fonte limpa, a principal procura pelo sistema solar fotovoltaico é pela economia de até 95% na conta de luz por mais de 25 anos.
+        </div>
+        <ul>
+            <li id="lista" *ngFor="let item of lista">
+              
+             <div class="tituloPorqueInvestirOpcao"> 
+                <div   (click)="open(item.id)">{{ item.nome }}</div>
+                <div  [@expansao]="item.expandido ? 'expandido' : 'recolhido'" class="detalhes">
+                {{ item.detalhes }}
+                </div>
+            </div>
+            </li>
+          </ul>
+     
+    </div>
+
+</div>
+
+
+
+
+
+</div>

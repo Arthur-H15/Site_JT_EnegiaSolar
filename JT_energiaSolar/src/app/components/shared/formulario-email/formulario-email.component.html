@@ -1,0 +1,18 @@
+<div id="formularioEmail">
+  <div id="for">
+  <div class="titulo" (click)="abrirForm()">Faça Agora Seu Orçamento!!!</div>
+<form (ngSubmit)="onSubmit()" #meuForm="ngForm" [class.displaynone]="showForm">
+  
+    <label for="nome">Nome:</label>
+    <input placeholder="Insira seu nome aqui" type="text" id="nome" name="nome" [(ngModel)]="dadosForm.nome" required>
+  
+    <label for="email">Telefone:</label>
+    <input mask="(00) 0000-0000"  placeholder="(00) 0000-0000" type="text" id="numero" name="numero" [(ngModel)]="dadosForm.numero"  required>
+    <label for="email">Cidade:</label>
+    <input placeholder="Insira sua Cidade aqui" type="email" id="email" name="email" [(ngModel)]="dadosForm.email" required>
+    <label for="email">Valor da conta:</label>
+    <input placeholder="R$ 00,00" type="text" id="conta" name="Conta"  [(ngModel)]="dadosForm.conta" (keyup)="inserirValorConta()" required>  
+    <button type="submit" [disabled]="!meuForm.valid">Simulação</button>
+  </form>
+</div>
+</div>

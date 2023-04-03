@@ -1,0 +1,102 @@
+  #formularioEmail{
+    // width: 80%;
+    background-image: url('../../../../assets/img/backGroundFormulario.jpg');
+    height: 100%;
+    margin: 0 auto;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    border-radius: 1,5%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+#for{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  // margin-left:auto ;
+  height: 100%;
+  
+
+}
+ .titulo{
+  font-size: large;
+  color: #fff;
+  background-color:black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.25rem;
+  
+  
+  
+ 
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.25rem;
+   
+  }
+  
+
+  label {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+  }
+  
+  input {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    display: block;
+    
+  }
+  
+  button[type="submit"] {
+    width: 95%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  @media (max-width: 636px) {
+
+    #for{
+      
+      width: 100%;
+      margin:auto;
+      padding: 0px;
+      
+      }
+      #formularioEmail{
+        // width: 80%;
+        background-repeat: repeat-y;
+    
+    }
+      form {
+        display: block;
+        
+        
+       
+      }
+      .displaynone{
+      display: none;
+
+      }
+      .titulo{
+        cursor: pointer;
+      }
+      
+    
+    
+  }

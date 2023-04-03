@@ -1,0 +1,22 @@
+<header>
+  <div class="logo">
+    <img src="../../assets/img/logoEnegiasolar.png" alt="Logo">
+  </div>
+  <button (click)="abrirMenu()" class="menu-toggle"><img src="../../assets/buttons/menu.svg" alt=""></button>
+
+  <nav  class="menu" [class.fechado]="showMenu" >
+    
+    <ul>
+      <li><a [routerLink]="['/']" routerLinkActive="router-link-active" >Pagina Inicial</a></li>
+      <li><a [routerLink]="['/']" routerLinkActive="router-link-active" >Sobre</a></li>
+      <li><a [routerLink]="['/']" routerLinkActive="router-link-active" >Serviços</a></li>
+    </ul>
+    <div class="redesociais">
+    <a href="http://google.com" ><img  src="../../assets/icons/instagram.svg" alt="" ></a>
+    <a href="http://google.com" ><img  src="../../assets/icons/whatsapp.svg" alt="" ></a>
+    <a href="http://google.com" ><img  src="../../assets/icons/facebook-box-fill.svg" alt="" ></a>
+  </div>
+  
+  </nav>
+  
+</header>
